@@ -274,6 +274,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# IRQ balance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # JSON
 PRODUCT_PACKAGES += \
     libjson
@@ -371,16 +375,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.3.vendor
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/power/config/taro/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # PowerShare
 PRODUCT_PACKAGES += \
@@ -439,10 +436,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_taro/android.hardware.sensor.stepdetector.xml
-
-# Servicetracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
