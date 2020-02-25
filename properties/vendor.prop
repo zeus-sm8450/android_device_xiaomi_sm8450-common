@@ -411,6 +411,9 @@ ro.vendor.nfc.repair=1
 ro.vendor.se.chip.model=SN110T
 ro.vendor.se.type=HCE,UICC
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # QFP
 persist.vendor.qfp=true
 
