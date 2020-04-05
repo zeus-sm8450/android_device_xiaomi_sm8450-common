@@ -1,4 +1,5 @@
 # Global
+ro.boot.hwc              u:object_r:exported_default_prop:s0
 ro.build.flavor          u:object_r:exported_default_prop:s0
 ro.carrier.name          u:object_r:exported_default_prop:s0
 ro.miui.cust_variant     u:object_r:exported_default_prop:s0
