@@ -638,3 +638,6 @@ service taro-post-boot /vendor/bin/sh /vendor/bin/init.taro.post_boot.sh
 
 on property:vendor.post_boot.parsed=1
     start taro-post-boot
+
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
