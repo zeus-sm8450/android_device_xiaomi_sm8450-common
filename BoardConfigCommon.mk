@@ -135,7 +135,8 @@ BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
     allow_file_spec_access \
     bootinfo.fingerprint=$(CUSTOM_VERSION) \
-    mtdoops.fingerprint=$(CUSTOM_VERSION)
+    mtdoops.fingerprint=$(CUSTOM_VERSION) \
+    irqaffinity=0-3
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
