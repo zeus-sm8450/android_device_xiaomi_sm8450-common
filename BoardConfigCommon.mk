@@ -133,6 +133,7 @@ BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
+    allow_file_spec_access \
     bootinfo.fingerprint=$(CUSTOM_VERSION) \
     mtdoops.fingerprint=$(CUSTOM_VERSION)
 BOARD_BOOTCONFIG := \
