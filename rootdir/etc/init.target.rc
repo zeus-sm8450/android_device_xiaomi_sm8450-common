@@ -77,6 +77,7 @@ on init
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
     # Initial cpusets
     #mkdir /dev/cpuset/foreground/boost
@@ -568,6 +569,9 @@ on post-fs-data
     # Goodix fingerprint
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
+
+    # Migrate tasks again in case kernel threads are created during boot
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
 on property:sys.lmkd.memory.compact=1
     setprop sys.lmkd.memory.compact 0
