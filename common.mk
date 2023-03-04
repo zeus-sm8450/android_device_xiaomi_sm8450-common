@@ -523,6 +523,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-diwali.sh \
     init.kernel.post_boot-taro.sh \
     init.kernel.post_boot.sh \
+    init.taro.post_boot.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
