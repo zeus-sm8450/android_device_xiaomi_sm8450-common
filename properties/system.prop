@@ -55,6 +55,11 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 
+# Render backend
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
