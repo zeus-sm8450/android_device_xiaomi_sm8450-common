@@ -59,6 +59,11 @@ telephony.lteOnCdmaDevice=1
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
 
+# Render backend
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
