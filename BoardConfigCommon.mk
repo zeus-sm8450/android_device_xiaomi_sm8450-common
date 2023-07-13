@@ -100,7 +100,7 @@ DEVICE_MANIFEST_TARO_FILES := \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
     $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    $(COMMON_PATH)/hidl/lineage_hidl.xml
 
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
