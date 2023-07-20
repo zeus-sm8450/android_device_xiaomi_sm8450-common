@@ -477,16 +477,31 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
-    init.class_main.sh \
-    init.qcom.class_core.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.sh \
     init.target.rc \
     init.touch_report.rc \
     ueventd-odm.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.qti.kernel.rc
+
+# Vendor Executables
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.kernel.post_boot-cape.sh \
+    init.kernel.post_boot-diwali.sh \
+    init.kernel.post_boot-taro.sh \
+    init.kernel.post_boot.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.display_boot.sh \
+    init.qti.kernel.sh \
+    init.qti.qcv.sh \
+    init.qti.write.sh \
+    vendor_modprobe.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom

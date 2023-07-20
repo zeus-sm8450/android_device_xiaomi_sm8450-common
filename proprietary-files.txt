@@ -415,7 +415,6 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display
 vendor/bin/hw/vendor.qti.hardware.display.allocator-service
-vendor/bin/init.qti.display_boot.sh
 vendor/etc/init.panel_info.sh
 vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
@@ -943,15 +942,6 @@ vendor/lib64/hw/consumerir.qcom.so
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
-# Kernel
-vendor/bin/init.kernel.post_boot-cape.sh
-vendor/bin/init.kernel.post_boot-diwali.sh
-vendor/bin/init.kernel.post_boot-taro.sh
-vendor/bin/init.kernel.post_boot.sh
-vendor/bin/init.qti.kernel.sh
-vendor/bin/vendor_modprobe.sh
-vendor/etc/init/hw/init.qti.kernel.rc
-
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
@@ -1370,7 +1360,6 @@ vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
 
 # QCV
-vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
 
 # QESDK
@@ -1452,7 +1441,6 @@ vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
 # QTI
-vendor/bin/init.qti.write.sh
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
 vendor/lib/libsoc_helper.so
@@ -1905,7 +1893,6 @@ vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
-vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/bin/test-nusensors
@@ -2127,7 +2114,6 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 
 # USB
-vendor/bin/init.qcom.usb.sh
 vendor/etc/init/hw/init.qcom.usb.rc
 
 # VM mem
