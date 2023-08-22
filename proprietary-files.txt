@@ -1138,16 +1138,10 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/apdr.conf
-vendor/etc/batching.conf
 vendor/etc/cacert_location.pem
-vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
 vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/loc-launcher.rc
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
 vendor/etc/seccomp_policy/gnss@2.0-base.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
@@ -1156,7 +1150,6 @@ vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtra_root_cert.pem
-vendor/etc/xtwifi.conf
 vendor/lib/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/libMiVDR.so
@@ -1361,9 +1354,6 @@ vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/media_codecs_performance_taro.xml
-vendor/etc/media_codecs_taro.xml
-vendor/etc/media_profiles_taro.xml
 vendor/etc/media_taro/video_system_specs.json
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy
