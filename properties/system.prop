@@ -18,6 +18,9 @@ debug.hwui.target_cpu_time_percent=20
 # Graphics
 debug.sf.disable_backpressure=1
 
+# LMK properties
+ro.lmk.kill_heaviest_task=true
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
