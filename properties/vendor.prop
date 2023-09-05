@@ -199,6 +199,7 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_2_support=false
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.sbc_hd_higher_bitrate=1
 
 # Camera
 camera.disable_zsl_mode=true
