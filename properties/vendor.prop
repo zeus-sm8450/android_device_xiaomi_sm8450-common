@@ -162,6 +162,12 @@ vendor.audio_hal.period_size=192
 vendor.qc2audio.per_frame.flac.dec.enabled=true
 vendor.qc2audio.suspend.enabled=true
 vendor.voice.path.for.pcm.voip=true
+ro.audio.usb.period_us=20375
+af.resampler.quality=7
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
 
 # Battery
 persist.vendor.battery.health=true
@@ -199,6 +205,7 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_2_support=false
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.sbc_hd_higher_bitrate=1
 
 # Camera
 camera.disable_zsl_mode=true
