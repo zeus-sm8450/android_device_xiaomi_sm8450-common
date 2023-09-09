@@ -26,5 +26,8 @@ vendor.audio.use.sw.ape.decoder=true
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
+# Blur
+ro.launcher.blur.appLaunch=0
+
 # Radio
 persist.vendor.radio.hidl_dev_service=true
