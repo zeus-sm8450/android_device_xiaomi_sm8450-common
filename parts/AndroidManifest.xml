@@ -22,9 +22,10 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
@@ -47,15 +48,6 @@
             </intent-filter>
         </receiver>
 
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="${applicationId}.androidx-startup"
-            tools:replace="android:authorities"/>
-
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
-        </service>
-
         <activity
             android:name=".dolby.DolbyActivity"
             android:label="@string/dolby_title"
@@ -71,13 +63,25 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
-            <meta-data android:name="com.android.settings.summary"
-                       android:resource="@string/dolby_summary" />
+            <meta-data android:name="com.android.settings.summary_uri"
+                       android:value="content://org.lineageos.settings.device.summary/dolby" />
         </activity>
+
+        <provider
+            android:name=".SummaryProvider"
+            android:authorities="org.lineageos.settings.device.summary">
+        </provider>
+
+        <service
+            android:name=".doze.DozeService"
+            android:exported="true"
+            android:permission="DozeService">
+        </service>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
-	    android:label="@string/ambient_display_title">
+	    android:label="@string/ambient_display_title"
+            android:exported="true">
             <intent-filter>
                 <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -103,6 +107,7 @@
 
         <service
             android:name=".thermal.ThermalService"
+            android:exported="true"
             android:permission="ThermalService">
         </service>
 
