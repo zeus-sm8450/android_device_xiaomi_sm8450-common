@@ -49,3 +49,9 @@ echo 20480 > /dev/cpuctl/foreground/cpu.shares
 echo 20480 > /dev/cpuctl/nnapi-hal/cpu.shares
 echo 20480 > /dev/cpuctl/rt/cpu.shares
 echo 20480 > /dev/cpuctl/top-app/cpu.shares
+
+# IRQ Tuning
+# IRQ 253: msm_drm0
+# IRQ 208: kgsl_3d0_irq
+echo 1 > /proc/irq/208/smp_affinity_list 1
+echo 2 > /proc/irq/253/smp_affinity_list 2
