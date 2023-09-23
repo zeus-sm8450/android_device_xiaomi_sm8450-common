@@ -1,8 +1,2 @@
-# MIUI
-ro.miui.                              u:object_r:exported_system_prop:s0
-ro.product.mod_device                 u:object_r:exported_default_prop:s0 exact string
-ro.cust.test                          u:object_r:exported_system_prop:s0
-ro.carrier                            u:object_r:exported_default_prop:s0 exact string
-
 # SettingsLib
 settingsdebug.instant.packages u:object_r:settingslib_prop:s0
