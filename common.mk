@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget_Vendor \
     FrameworksResXiaomi \
     SettingsProviderResXiaomi \
+    NfcResZeus \
     WifiResTarget \
     WifiResTarget_spf
 
