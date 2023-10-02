@@ -534,7 +534,8 @@
     </carrier_config>
     <carrier_config mcc="405" mnc="51,52,53,54,55,56">
         <boolean name="carrier_volte_available_bool" value="true" />
-    </carrier_config>    
+        <boolean name="vonr_enabled_bool" value="true" />
+    </carrier_config>
     <carrier_config mcc="405" mnc="840">
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -542,6 +543,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -571,6 +573,7 @@
         <boolean name="editable_wfc_mode_bool" value="false" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="use_custom_video_ui" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
@@ -602,6 +605,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -632,6 +636,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -662,6 +667,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -692,6 +698,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -722,6 +729,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -752,6 +760,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -782,6 +791,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -812,6 +822,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -842,6 +853,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -872,6 +884,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -902,6 +915,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -932,6 +946,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -962,6 +977,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -992,6 +1008,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -1022,6 +1039,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -1052,6 +1070,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -1082,6 +1101,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -1112,6 +1132,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -1142,6 +1163,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
@@ -1172,6 +1194,7 @@
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
         <boolean name="config_carrier_specific_network_type_display" value="true" />
         <boolean name="remove_modify_call_capability" value="true" />
