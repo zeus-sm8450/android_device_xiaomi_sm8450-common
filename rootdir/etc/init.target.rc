@@ -481,6 +481,8 @@ service vendor.sniffer.circular /vendor/bin/tcpdump -i wlan0 -W 3 -C 300 -w /dat
 on property:sys.boot_completed=1
     enable vendor.qvirtmgr
     start  vendor.qvirtmgr
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
 
 on post-fs-data
     chmod 0666 /dev/migt
@@ -625,6 +627,3 @@ service taro-post-boot /vendor/bin/sh /vendor/bin/init.taro.post_boot.sh
 
 on property:vendor.post_boot.parsed=1
     start taro-post-boot
-
-    # Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1
