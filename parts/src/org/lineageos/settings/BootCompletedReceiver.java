@@ -37,7 +37,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
 
         // Dolby
-        DolbyUtils.getInstance(context).onBootCompleted();
+        DolbyUtils.getInstance(context);
 
         // Doze
         DozeUtils.onBootCompleted(context);
