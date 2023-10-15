@@ -205,7 +205,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss-V1-ndk.vendor \
     android.hardware.gnss@2.1.vendor \
-    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor \
     libgrpc++_unsecure.vendor
 
 PRODUCT_COPY_FILES += \
