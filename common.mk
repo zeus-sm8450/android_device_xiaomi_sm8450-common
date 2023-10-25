@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
     android.hardware.memtrack-V1-ndk_platform.vendor \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V1-ndk.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor
 
@@ -290,9 +291,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
     libkeymaster_messages.vendor
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
 # Lineage Health
 PRODUCT_PACKAGES += \
