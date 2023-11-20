@@ -25,15 +25,10 @@
     <string-array name="config_defaultPinnerServiceFiles" translatable="false">
         <item>/system/framework/framework.jar</item>
         <item>/system/framework/services.jar</item>
-        <item>/system/bin/surfaceflinger</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
-        <item>"/system_ext/priv-app/SystemUIGoogle/oat/arm64/SystemUIGoogle.odex"</item>
-        <item>/system/lib/libhwui.so</item>
-        <item>/system/lib64/libhwui.so</item>
-        <item>/system/lib64/libEGL.so</item>
-        <item>/system/lib64/libllvm-qgl.so</item>
-        <item>/vendor/lib64/egl/libGLESv2_adreno.so</item>
-        <item>/vendor/lib64/libllvm-qgl.so</item>
+        <item>/system/bin/surfaceflinger</item>
     </string-array>
 
     <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
