@@ -98,6 +98,9 @@
 # Nfc
 /vendor/bin/hw/android\.hardware\.nfc@1\.2-service                 u:object_r:hal_nfc_default_exec:s0
 
+# Powershare
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi_sm8450                           u:object_r:hal_lineage_powershare_default_exec:s0
+
 # QRTR
 /(vendor|system/vendor)/bin/qrtr-lookup u:object_r:vendor_qrtr_exec:s0
 
