@@ -43,8 +43,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-impl-qti \
+    android.hardware.boot@1.2-impl-qti.recovery \
+    android.hardware.boot@1.2-service \
     checkpoint_gc \
-    otapreopt_script
+    otapreopt_script \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
 
 # AIDL NDK backend
 PRODUCT_PACKAGES += \
@@ -138,17 +144,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
-
-# Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    android.hardware.boot@1.2-service \
-    bootctrl.xiaomi_sm8450 \
-    bootctrl.xiaomi_sm8450.recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
 
 # Camera
 PRODUCT_PACKAGES += \
