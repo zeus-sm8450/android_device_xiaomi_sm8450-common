@@ -20,21 +20,16 @@ echo 128 > /sys/block/dm-7/queue/read_ahead_kb
 echo 128 > /sys/block/dm-8/queue/read_ahead_kb
 echo 128 > /sys/block/dm-9/queue/read_ahead_kb
 
-# cpuset
-echo 0-1 > /dev/cpuset/background/cpus
-echo 0-3 > /dev/cpuset/system-background/cpus
-echo 0-3 > /dev/cpuset/restricted/cpus
-echo 1-2 > /dev/cpuset/audio-app/cpus
-
 # governor settings
-echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
-echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
-echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
-echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us
+echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy4/walt/up_rate_limit_us
+echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/walt/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us
 
 # uclamp tuning
+echo 1  > /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
 echo 50 > /dev/cpuctl/background/cpu.uclamp.max
 echo 50 > /dev/cpuctl/system-background/cpu.uclamp.max
 echo 60 > /dev/cpuctl/dex2oat/cpu.uclamp.max

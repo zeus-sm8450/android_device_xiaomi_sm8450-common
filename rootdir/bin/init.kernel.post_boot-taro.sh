@@ -63,10 +63,11 @@ echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/nr_prev_assist_thresh
 echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
 # Setting b.L scheduler parameters
-echo 95 95 > /proc/sys/walt/sched_upmigrate
-echo 85 85 > /proc/sys/walt/sched_downmigrate
-echo 100 > /proc/sys/walt/sched_group_upmigrate
-echo 85 > /proc/sys/walt/sched_group_downmigrate
+#echo 80 95 > /proc/sys/walt/sched_upmigrate
+#echo 75 85 > /proc/sys/walt/sched_downmigrate
+#echo 95 > /proc/sys/walt/sched_group_upmigrate
+#echo 80 > /proc/sys/walt/sched_group_downmigrate
+
 echo 1 > /proc/sys/walt/sched_walt_rotate_big_tasks
 echo 400000000 > /proc/sys/walt/sched_coloc_downmigrate_ns
 echo 39000000 39000000 39000000 39000000 39000000 39000000 39000000 5000000 > /proc/sys/walt/sched_coloc_busy_hyst_cpu_ns
@@ -87,11 +88,8 @@ echo 325 > /proc/sys/walt/walt_low_latency_task_threshold
 
 # cpuset parameters
 echo 0-1 > /dev/cpuset/background/cpus
-echo 0-3 > /dev/cpuset/restricted/cpus
-echo 0-6 > /dev/cpuset/top-app/cpus
+echo 0-7 > /dev/cpuset/top-app/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
-echo 0-6 > /dev/cpuset/foreground/cpus
-echo 4-7 > /dev/cpuset/foreground/boost/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/walt/sched_boost
@@ -113,12 +111,10 @@ echo 614400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
 
 # configure input boost settings
-if [ $rev == "1.0" ]; then
-	echo 1382800 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
-else
-	echo 1171200 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
-fi
-echo 100 > /proc/sys/walt/input_boost/input_boost_ms
+echo 1382800 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
+echo 200 > /proc/sys/walt/input_boost/input_boost_ms
+echo 1785600 0 0 0 2169600 0 0 2419200 > /proc/sys/walt/input_boost/powerkey_input_boost_freq
+echo 500 > /proc/sys/walt/input_boost/powerkey_input_boost_ms
 
 # configure governor settings for gold cluster
 echo "walt" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
