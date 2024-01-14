@@ -48,7 +48,7 @@
             </intent-filter>
         </receiver>
 
-        <activity
+        <!-- <activity
             android:name=".dolby.DolbyActivity"
             android:label="@string/dolby_title"
             android:exported="true">
@@ -65,7 +65,7 @@
                        android:value="com.android.settings.category.ia.sound" />
             <meta-data android:name="com.android.settings.summary_uri"
                        android:value="content://org.lineageos.settings.device.summary/dolby" />
-        </activity>
+        </activity> -->
 
         <provider
             android:name=".SummaryProvider"
@@ -111,7 +111,7 @@
             android:permission="ThermalService">
         </service>
 
-        <service
+        <!-- <service
             android:name=".dolby.DolbyTileService"
             android:icon="@drawable/ic_dolby_qs"
             android:label="@string/dolby_title"
@@ -120,7 +120,7 @@
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
-        </service>
+        </service> -->
 
     </application>
 </manifest>
